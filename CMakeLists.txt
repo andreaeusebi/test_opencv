@@ -41,3 +41,17 @@ target_link_libraries(test_circular_shift
   ${OpenCV_LIBRARIES}
 )
 ## --------------------------------------- ##
+
+## ----- Test Cross Correlation ----- ##
+add_executable(test_cross_correlation
+  src/test_cross_correlation.cpp
+)
+
+target_include_directories(test_cross_correlation PUBLIC
+  ${OpenCV_INCLUDE_DIRS}
+)
+
+target_link_libraries(test_cross_correlation
+  ${OpenCV_LIBRARIES}
+)
+## --------------------------------------- ##
