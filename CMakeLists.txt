@@ -55,3 +55,17 @@ target_link_libraries(test_cross_correlation
   ${OpenCV_LIBRARIES}
 )
 ## --------------------------------------- ##
+
+## ----- Test Cuda Installation ----- ##
+add_executable(test_cuda_installation
+  src/test_cuda_installation.cpp
+)
+
+target_include_directories(test_cuda_installation PUBLIC
+  ${OpenCV_INCLUDE_DIRS}
+)
+
+target_link_libraries(test_cuda_installation
+  ${OpenCV_LIBRARIES}
+)
+## --------------------------------------- ##
